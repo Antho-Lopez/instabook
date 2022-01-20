@@ -1,5 +1,7 @@
 {
   "name": "instabook",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
