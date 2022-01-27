@@ -1,13 +1,13 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title class="ion-text-center">S'enregister</ion-title>
+    <ion-title class="ion-text-center">Register</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title class="ion-text-center" size="large">S'enregistrer</ion-title>
+      <ion-title class="ion-text-center" size="large">Register</ion-title>
     </ion-toolbar>
   </ion-header>
 
@@ -15,7 +15,7 @@
     <ion-grid>
 
       <ion-row style="margin-top:70px">
-        <a class="ion-text-start" [routerLink]="['/home']"><ion-icon name="chevron-back-outline"></ion-icon>Retour</a> 
+        <a class="ion-text-start" [routerLink]="['/home']"><ion-icon name="chevron-back-outline"></ion-icon>Back</a> 
       </ion-row>
 
       <ion-row class="ion-justify-content-center">
@@ -25,31 +25,31 @@
       <ion-col class="ion-align-items-center">
 
         <ion-item>
-          <ion-label position="floating">Votre pseudo</ion-label>
+          <ion-label position="floating">Your pseudo</ion-label>
           <ion-input type="text"></ion-input>
         </ion-item>
 
         <ion-item>
-          <ion-label position="floating">Votre adresse email</ion-label>
+          <ion-label position="floating">Your email</ion-label>
           <ion-input type="email"></ion-input>
         </ion-item>
 
         <ion-item> 
-          <ion-label position="floating">Votre mot de passe</ion-label>
+          <ion-label position="floating">Your password</ion-label>
           <ion-input type="password"></ion-input>
         </ion-item>
  
         <ion-item> 
-          <ion-label position="floating">Confirmer le mot de passe</ion-label>
+          <ion-label position="floating">Confirm password</ion-label>
           <ion-input type="password"></ion-input>
         </ion-item>
  
 
-        <ion-button size="large" color="primary" class="ion-margin-top" [routerLink]="['/feed']">S'inscrire</ion-button>  
+        <ion-button size="large" color="primary" class="ion-margin-top" [routerLink]="['/feed']">Sign up</ion-button>  
         
         <ion-row class="ion-margin-top">
           <ion-col size="12">
-            <a [routerLink]="['/home']" class="">Déjà un compte ? Se connecter</a>
+            <a [routerLink]="['/home']" class="">Already an account ? Sign in</a>
           </ion-col>
         </ion-row>
 

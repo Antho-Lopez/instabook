@@ -1,11 +1,27 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Feed</ion-title>
+    <ion-title>Profile</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
+  <div class="ion-margin">
+    <ion-row class="ion-align-items-center ion-justify-content-start">
+      <ion-avatar class="ion-margin-end">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+      <p>Lopez Anthony</p>
+    </ion-row>
+    <ion-button size="small" color="tertiary" class="ion-margin-top ion-margin-bottom" [routerLink]="['/feed']">Edit profile</ion-button> 
+    <div class="">
+      <ion-row class="ion-align-items-center ion-justify-content-around">
+        <ion-label>300 following</ion-label>
+        <ion-label>2440 followers</ion-label>
+      </ion-row>
+    </div>
+  </div>
+  
   <ion-row class="ion-justify-content-center">
     <ion-button size="medium" color="tertiary" class="ion-margin-top ion-justify-content-center" [routerLink]="['/feed']">New publication</ion-button> 
   </ion-row>
