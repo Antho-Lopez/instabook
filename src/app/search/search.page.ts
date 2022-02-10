@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchPage implements OnInit {
 
+  data: any;
+
   constructor() { }
+  ionViewWillEnter() {
+    setTimeout(() => {
+      this.data = {
+        userList: ['Maxence Bannier','Yvan Brai','Charly Escalona', 'Christophe Salou'],
+      };
+    }, 100);
+  }
 
   ngOnInit() {
   }
+
 
 }

@@ -5,5 +5,36 @@
 </ion-header>
 
 <ion-content>
+  <div id="container">
+  <ion-grid>
+    <ion-col class="ion-align-items-center">
+
+      <ion-row class="ion-align-items-center">
+        <ion-col size="8">
+          <a [routerLink]="['/feed']">Retours</a>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button id="align-end" size="small" color="primary" [routerLink]="['/feed']">Publier</ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-item>
+        <ion-textarea rows="6" placeholder="What's happening ?"></ion-textarea>
+      </ion-item>  
+
+      <ion-row class="ion-align-items-center">
+        <ion-col size="10">
+          <label for="file-upload" class="custom-file-upload">
+            <ion-icon size="large" name="attach-outline"></ion-icon>
+          </label>
+          <input id="file-upload" type="file" accept="video/*, image/*"/>
+        </ion-col>
+        
+       
+      </ion-row>
+
+    </ion-col>
+  </ion-grid>
+</div>  
 
 </ion-content>

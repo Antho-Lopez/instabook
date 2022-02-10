@@ -9,15 +9,15 @@
   <div class="ion-margin">
     <ion-row class="ion-align-items-center ion-justify-content-start">
       <ion-avatar class="ion-margin-end">
-        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+        <img :src="{{data.currentUserPp}}">
       </ion-avatar>
-      <p>Lopez Anthony</p>
+      <p>{{data.currentUser}}</p>
     </ion-row>
     <ion-button size="small" color="tertiary" class="ion-margin-top ion-margin-bottom" [routerLink]="['/feed']">Edit profile</ion-button> 
     <div class="">
       <ion-row class="ion-align-items-center ion-justify-content-around">
-        <ion-label>300 following</ion-label>
-        <ion-label>2440 followers</ion-label>
+        <ion-label>{{data.currentUserFollowing}} following</ion-label>
+        <ion-label>{{data.currentUserFollowers}} followers</ion-label>
       </ion-row>
     </div>
   </div>
@@ -27,13 +27,13 @@
   </ion-row>
 
   <ion-card>
-    <img src="https://i.pinimg.com/originals/18/7c/8f/187c8f58a77b83c77f0340f57c56dfcf.png">
+    <img :src="{{data.postImg}}">
     <ion-card-header>
       <ion-row class="ion-align-items-center ion-justify-content-between">
       <div>
         <ion-row class="ion-align-items-center">
         <ion-card-title><ion-icon name="heart-outline"></ion-icon></ion-card-title>
-        <ion-card-subtitle class="ion-margin-start">530 Likes</ion-card-subtitle>
+        <ion-card-subtitle class="ion-margin-start">{{data.nbLikes}} Likes</ion-card-subtitle>
         </ion-row>
 
       </div>
@@ -42,9 +42,9 @@
     </ion-card-header>
   
     <ion-card-content>
-      <ion-card-title>Lopez Anthony</ion-card-title>
-      <ion-card-subtitle>Keep close to Nature's heart... and break clear away</ion-card-subtitle>   
-      <ion-card-subtitle class="ion-margin-top">32 comments</ion-card-subtitle> 
+      <ion-card-title>{{data.postUser}}</ion-card-title>
+      <ion-card-subtitle>{{data.postDesc}}</ion-card-subtitle>   
+      <ion-card-subtitle class="ion-margin-top">{{data.nbComments}} comments</ion-card-subtitle> 
       <ion-item>
         <ion-input placeholder="Add a comment..."></ion-input>
       </ion-item>
@@ -52,13 +52,13 @@
   </ion-card>
 
   <ion-card>
-    <img src="https://i.pinimg.com/originals/18/7c/8f/187c8f58a77b83c77f0340f57c56dfcf.png">
+    <img :src="{{data.postImg}}">
     <ion-card-header>
       <ion-row class="ion-align-items-center ion-justify-content-between">
       <div>
         <ion-row class="ion-align-items-center">
         <ion-card-title><ion-icon name="heart-outline"></ion-icon></ion-card-title>
-        <ion-card-subtitle class="ion-margin-start">530 Likes</ion-card-subtitle>
+        <ion-card-subtitle class="ion-margin-start">{{data.nbLikes}} Likes</ion-card-subtitle>
         </ion-row>
 
       </div>
@@ -67,9 +67,9 @@
     </ion-card-header>
   
     <ion-card-content>
-      <ion-card-title>Lopez Anthony</ion-card-title>
-      <ion-card-subtitle>Keep close to Nature's heart... and break clear away</ion-card-subtitle>   
-      <ion-card-subtitle class="ion-margin-top">32 comments</ion-card-subtitle> 
+      <ion-card-title>{{data.postUser}}</ion-card-title>
+      <ion-card-subtitle>{{data.postDesc}}</ion-card-subtitle>   
+      <ion-card-subtitle class="ion-margin-top">{{data.nbComments}} comments</ion-card-subtitle> 
       <ion-item>
         <ion-input placeholder="Add a comment..."></ion-input>
       </ion-item>
@@ -77,13 +77,13 @@
   </ion-card>
 
   <ion-card>
-    <img src="https://i.pinimg.com/originals/18/7c/8f/187c8f58a77b83c77f0340f57c56dfcf.png">
+    <img :src="{{data.postImg}}">
     <ion-card-header>
       <ion-row class="ion-align-items-center ion-justify-content-between">
       <div>
         <ion-row class="ion-align-items-center">
         <ion-card-title><ion-icon name="heart-outline"></ion-icon></ion-card-title>
-        <ion-card-subtitle class="ion-margin-start">530 Likes</ion-card-subtitle>
+        <ion-card-subtitle class="ion-margin-start">{{data.nbLikes}} Likes</ion-card-subtitle>
         </ion-row>
 
       </div>
@@ -92,9 +92,9 @@
     </ion-card-header>
   
     <ion-card-content>
-      <ion-card-title>Lopez Anthony</ion-card-title>
-      <ion-card-subtitle>Keep close to Nature's heart... and break clear away</ion-card-subtitle>   
-      <ion-card-subtitle class="ion-margin-top">32 comments</ion-card-subtitle> 
+      <ion-card-title>{{data.postUser}}</ion-card-title>
+      <ion-card-subtitle>{{data.postDesc}}</ion-card-subtitle>   
+      <ion-card-subtitle class="ion-margin-top">{{data.nbComments}} comments</ion-card-subtitle> 
       <ion-item>
         <ion-input placeholder="Add a comment..."></ion-input>
       </ion-item>
@@ -102,13 +102,13 @@
   </ion-card>
 
   <ion-card>
-    <img src="https://i.pinimg.com/originals/18/7c/8f/187c8f58a77b83c77f0340f57c56dfcf.png">
+    <img :src="{{data.postImg}}">
     <ion-card-header>
       <ion-row class="ion-align-items-center ion-justify-content-between">
       <div>
         <ion-row class="ion-align-items-center">
         <ion-card-title><ion-icon name="heart-outline"></ion-icon></ion-card-title>
-        <ion-card-subtitle class="ion-margin-start">530 Likes</ion-card-subtitle>
+        <ion-card-subtitle class="ion-margin-start">{{data.nbLikes}} Likes</ion-card-subtitle>
         </ion-row>
 
       </div>
@@ -117,9 +117,9 @@
     </ion-card-header>
   
     <ion-card-content>
-      <ion-card-title>Lopez Anthony</ion-card-title>
-      <ion-card-subtitle>Keep close to Nature's heart... and break clear away</ion-card-subtitle>   
-      <ion-card-subtitle class="ion-margin-top">32 comments</ion-card-subtitle> 
+      <ion-card-title>{{data.postUser}}</ion-card-title>
+      <ion-card-subtitle>{{data.postDesc}}</ion-card-subtitle>   
+      <ion-card-subtitle class="ion-margin-top">{{data.nbComments}} comments</ion-card-subtitle> 
       <ion-item>
         <ion-input placeholder="Add a comment..."></ion-input>
       </ion-item>
